@@ -34,7 +34,9 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+    'applications.users'
+]
 
 THIRD_PARTY_APPS = []
 
@@ -88,11 +90,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'users.User'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-CO'
 
 TIME_ZONE = 'UTC'
 
@@ -106,3 +110,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DEFAULT_CHARSET = 'utf-8'
